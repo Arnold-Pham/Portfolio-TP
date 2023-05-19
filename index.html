@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 
-<body>
+<body class="btn-blanc">
     <header class="my-5">
         <nav class="navbar navbar-expand-lg fixed-top btn-bleu navbar-dark w-100">
             <div class="container">
@@ -30,16 +30,23 @@
             </div>
         </nav>
     </header>
-    <h1 class="h1 text-center text-decoration-underline pt-5">Mon PortFolio</h1>
-    <section id="formation" class="z-1 position-relative w-100 bg-light py-5">
+    <h1 class="display-2 text-center pt-5 btn-blanc">Mon PortFolio</h1>
+    <section id="presentation" class="z-1 position-relative w-100 btn-gris pt-3 pb-5">
         <div class="container">
-            <h2 class="h3 py-3 ms-5 fw-bold">Ma formation</h2>
+            <h2 class="h3 py-3 ms-5 fw-bold">Présentations</h2>
+            <p class="h5">Bonjour, je suis Arnold actuellement en formation de Concepteur Développeur d'Application
+                (CDA) chez G2R, à Paris.</p>
+        </div>
+    </section>
+    <section id="formation" class="z-1 position-relative w-100 btn-blanc pt-3 pb-5">
+        <div class="container">
+            <h2 class="h3 pt-5 pb-3 ms-5 fw-bold">Ma formation</h2>
             <div class="row g-3">
                 <div class="col-12 col-lg-6">
                     <div class="card h-100">
-                        <div class="card-header">
+                        <div class="card-header btn-bleu">
                             <div class="card-title">
-                                <h3 class="h4 fst-italic text-center">Doranco</h3>
+                                <h3 class="mt-2 text-center">Doranco</h3>
                             </div>
                         </div>
                         <div class="card-body">
@@ -69,23 +76,23 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center">
-                            <span>2022</span>
-                            <a href="https://www.doranco.fr/" class="btn btn-bleu btn-sm"
+                        <div class="card-footer btn-rouge d-flex justify-content-between align-items-center">
+                            2022
+                            <a href="https://www.doranco.fr/" class="btn btn-blanc btn-sm"
                                 title="Lien vers le site de Doranco" target="_blank">Doranco</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="card h-100">
-                        <div class="card-header">
+                        <div class="card-header btn-bleu">
                             <div class="card-title">
-                                <h3 class="h4 fst-italic text-center">G2R Formation</h3>
+                                <h3 class="mt-2 text-center">G2R Formation</h3>
                             </div>
                         </div>
                         <div class="card-body">
                             <img src="img/logoG.png" alt="Logo de G2R Formation"
-                                class="card-img bg-light p-3 mb-3 border">
+                                class="card-img btn-blanc p-3 mb-3 border">
                             <div class="card-text">
                                 <span class="fw-bold">Connaissances aquises :</span>
                                 <ul class="ms-3 mt-3">
@@ -94,9 +101,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center">
-                            <span>2023</span>
-                            <a href="https://g2r-formation.fr/" class="btn btn-bleu btn-sm"
+                        <div class="card-footer btn-rouge d-flex justify-content-between align-items-center">
+                            2023
+                            <a href="https://g2r-formation.fr/" class="btn btn-blanc btn-sm"
                                 title="Lien vers le site de G2R Formation" target="_blank">G2R Formation</a>
                         </div>
                     </div>
@@ -104,28 +111,28 @@
             </div>
         </div>
     </section>
-    <section id="creation" class="z-1 position-relative w-100 bg-light py-5">
+    <section id="creation" class="z-1 position-relative w-100 btn-gris pt-3 pb-5">
         <div class="container">
             <h2 class="h3 py-3 ms-5 fw-bold">Mes créations</h2>
             <div class="row g-3">
                 <div class="col-12 col-lg-6 offset-lg-3">
                     <div class="card h-100">
-                        <div class="card-header">
+                        <div class="card-header btn-bleu">
                             <div class="card-title">
-                                <h3 class="h4 fst-italic text-center">Creativitez.fr</h3>
+                                <h3 class="mt-2 text-center">Creativitez.fr</h3>
                             </div>
                         </div>
                         <div class="card-body">
                             <img src="img/logoC.webp" alt="Logo de Creativitez"
-                                class="card-img bg-light p-3 mb-3 border">
+                                class="card-img btn-blanc p-3 mb-3 border">
                             <div class="card-text">Dans le cadre d'un projet de fin de formation chez Doranco, j'ai créé
                                 ce site avec l'aide de Symfony et de divers autres outils.<br><br>L'objectif visé était
                                 de créer un Front et un Back end fonctionnels.<br><br>Je suis donc parti sur un site de
                                 partage et de vente d'art, avec une véritable partie de destiné à la modération.</div>
                         </div>
-                        <div class="card-footer d-flex justify-content-between align-items-center">
-                            <span>Mars 2023</span>
-                            <a href="https://www.creativitez.fr/" class="btn btn-bleu btn-sm"
+                        <div class="card-footer btn-rouge d-flex justify-content-between align-items-center">
+                            Mars 2023
+                            <a href="https://www.creativitez.fr/" class="btn btn-blanc btn-sm"
                                 title="Lien vers le site de Creativitez" target="_blank">creativitez.fr</a>
                         </div>
                     </div>
@@ -135,9 +142,9 @@
     </section>
     <div id="vide"></div>
     <footer class="btn-rouge w-100 z-0 fixed-bottom pt-3">
-        <div class="container text-light">
+        <div class="container text-blanc">
             <h2 class="h4">Vous voilà en fin de page</h2>
-            <p>Pour me contacter, vous pouvez passer par le formulaire de contact de mon site <a
+            <p class="text-blanc">Pour me contacter, vous pouvez passer par le formulaire de contact de mon site <a
                     class="text-bleu text-decoration-none" href="https://www.creativitez.fr/contact" target="_blank">via
                     ce lien</a>.</p>
         </div>

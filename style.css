@@ -1,22 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #272322;
 }
+* h1 {
+  font-family: "Indie Flower", cursive;
+}
+* .card-title h3 {
+  font-family: "Itim", cursive;
+}
 * .btn-bleu {
   color: #fdfdfd !important;
   background: #037bec !important;
-}
-* .text-bleu {
-  color: #037bec !important;
 }
 * .btn-rouge {
   color: #fdfdfd !important;
   background: #cb3745 !important;
 }
+* .btn-blanc {
+  color: #272322 !important;
+  background: #fdfdfd !important;
+}
+* .btn-noir {
+  color: #fdfdfd !important;
+  background: #272322 !important;
+}
+* .btn-gris {
+  background: #e4e4e4 !important;
+}
+* .text-bleu {
+  color: #037bec !important;
+}
 * .text-rouge {
   color: #cb3745 !important;
+}
+* .text-blanc {
+  color: #fdfdfd !important;
+}
+* .text-noir {
+  color: #272322 !important;
 }
 * #vide {
   width: 100%;

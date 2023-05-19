@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
 $bleu : #037bec;
 $rouge: #cb3745;
 $noir: #272322;
@@ -9,22 +12,60 @@ $blanc: #fdfdfd;
     box-sizing: border-box;
     color: $noir;
 
-    .btn-bleu {
-        color: $blanc !important;
-        background: $bleu !important;
+    h1 {
+        font-family: 'Indie Flower', cursive;
     }
 
-    .text-bleu {
-        color: $bleu !important;
+    .card {
+        &-title {
+            h3 {
+                font-family: 'Itim', cursive;
+            }
+        }
     }
 
-    .btn-rouge {
-        color: $blanc !important;
-        background: $rouge !important;
+    .btn {
+        &-bleu {
+            color: $blanc !important;
+            background: $bleu !important;
+        }
+
+        &-rouge {
+            color: $blanc !important;
+            background: $rouge !important;
+        }
+
+        &-blanc {
+            color: $noir !important;
+            background: $blanc !important;
+        }
+
+        &-noir {
+            color: $blanc !important;
+            background: $noir !important;
+        }
+
+        &-gris {
+            background: darken($blanc, 10%) !important;
+        }
     }
 
-    .text-rouge {
-        color: $rouge !important;
+    .text {
+        &-bleu {
+            color: $bleu !important;
+        }
+
+        &-rouge {
+            color: $rouge !important;
+        }
+
+        &-blanc {
+            color: $blanc !important;
+        }
+
+        &-noir {
+            color: $noir !important;
+        }
     }
 
     #vide {
