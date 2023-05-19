@@ -1,47 +1,90 @@
-@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #272322;
+  color: #181c24;
 }
-* h1 {
-  font-family: "Indie Flower", cursive;
+* main {
+  position: relative;
+  z-index: 1;
+  height: 100%;
 }
-* .card-title h3 {
+* main .parallax {
+  height: 35vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10vh 0;
+  border: 1px solid white;
+}
+* main .parallax h1,
+* main .parallax h2 {
+  color: white;
+  font-family: "Permanent Marker", cursive;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+* main .parallax.p0 {
+  border-radius: 0;
+  border: none;
+  height: 60vh;
+  background-image: url("https://images6.alphacoders.com/130/1308264.jpeg");
+}
+* main .parallax.p1 {
+  background-image: url("https://images3.alphacoders.com/131/1312414.png");
+}
+* main .parallax.p2 {
+  background-image: url("https://images4.alphacoders.com/131/1312416.png");
+}
+* main .parallax.p3 {
+  background-image: url("https://images8.alphacoders.com/131/1312415.png");
+}
+* main .card-title h3 {
   font-family: "Itim", cursive;
 }
 * .btn-bleu {
-  color: #fdfdfd !important;
-  background: #037bec !important;
+  color: white !important;
+  background: #006af9 !important;
+}
+* .btn-bleu-d {
+  color: white !important;
+  background: #0049ad !important;
 }
 * .btn-rouge {
-  color: #fdfdfd !important;
-  background: #cb3745 !important;
+  color: white !important;
+  background: #d22f20 !important;
+}
+* .btn-rouge-d {
+  color: white !important;
+  background: #902016 !important;
 }
 * .btn-blanc {
-  color: #272322 !important;
-  background: #fdfdfd !important;
+  color: #181c24 !important;
+  background: white !important;
 }
 * .btn-noir {
-  color: #fdfdfd !important;
-  background: #272322 !important;
+  color: white !important;
+  background: #181c24 !important;
 }
 * .btn-gris {
-  background: #e4e4e4 !important;
+  background: #e3e6e8 !important;
 }
 * .text-bleu {
-  color: #037bec !important;
+  color: #006af9 !important;
 }
 * .text-rouge {
-  color: #cb3745 !important;
+  color: #d22f20 !important;
 }
 * .text-blanc {
-  color: #fdfdfd !important;
+  color: white !important;
 }
 * .text-noir {
-  color: #272322 !important;
+  color: #181c24 !important;
 }
 * #vide {
   width: 100%;

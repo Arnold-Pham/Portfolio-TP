@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
 
-$bleu : #037bec;
-$rouge: #cb3745;
-$noir: #272322;
-$blanc: #fdfdfd;
+$bleu : #006af9;
+$rouge: #d22f20;
+$noir: #181c24;
+$blanc: lighten(#dfe2e4, 25%);
 
 * {
     margin: 0;
@@ -12,17 +12,59 @@ $blanc: #fdfdfd;
     box-sizing: border-box;
     color: $noir;
 
-    h1 {
-        font-family: 'Indie Flower', cursive;
-    }
+    main {
+        .parallax {
+            height: 35vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10vh 0;
+            border: 1px solid white;
 
-    .card {
-        &-title {
-            h3 {
-                font-family: 'Itim', cursive;
+            & h1,
+            h2 {
+                color: $blanc;
+                font-family: 'Permanent Marker', cursive;
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+            }
+
+            &.p0 {
+                border-radius: 0;
+                border: none;
+                height: 60vh;
+                background-image: url("https://images6.alphacoders.com/130/1308264.jpeg");
+            }
+
+            &.p1 {
+                background-image: url("https://images3.alphacoders.com/131/1312414.png");
+            }
+
+            &.p2 {
+                background-image: url("https://images4.alphacoders.com/131/1312416.png");
+            }
+
+            &.p3 {
+                background-image: url("https://images8.alphacoders.com/131/1312415.png");
+            }
+        }
+
+        position: relative;
+        z-index: 1;
+        height: 100%;
+
+        .card {
+            &-title {
+                h3 {
+                    font-family: 'Itim', cursive;
+                }
             }
         }
     }
+
 
     .btn {
         &-bleu {
@@ -30,9 +72,19 @@ $blanc: #fdfdfd;
             background: $bleu !important;
         }
 
+        &-bleu-d {
+            color: $blanc !important;
+            background: darken($bleu, 15%) !important;
+        }
+
         &-rouge {
             color: $blanc !important;
             background: $rouge !important;
+        }
+
+        &-rouge-d {
+            color: $blanc !important;
+            background: darken($rouge, 15%) !important;
         }
 
         &-blanc {
