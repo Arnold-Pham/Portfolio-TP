@@ -33,16 +33,16 @@
   border-radius: 0;
   border: none;
   height: 60vh;
-  background-image: url("https://images6.alphacoders.com/130/1308264.jpeg");
+  background-image: url("img/1.jpeg");
 }
 * main .parallax.p1 {
-  background-image: url("https://images3.alphacoders.com/131/1312414.png");
+  background-image: url("img/2.png");
 }
 * main .parallax.p2 {
-  background-image: url("https://images4.alphacoders.com/131/1312416.png");
+  background-image: url("img/3.png");
 }
 * main .parallax.p3 {
-  background-image: url("https://images8.alphacoders.com/131/1312415.png");
+  background-image: url("img/4.png");
 }
 * main .card-title h3 {
   font-family: "Itim", cursive;
