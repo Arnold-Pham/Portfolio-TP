@@ -12,7 +12,42 @@ $blanc: lighten(#dfe2e4, 25%);
     box-sizing: border-box;
     color: $noir;
 
+    header {
+        nav {
+            & .navbar-nav {
+                & a.nav-link {
+                    &:after {
+                        border-bottom: solid 1px lighten($bleu, 15%);
+                        content: '';
+                        display: block;
+                        transform: scaleX(0);
+                        transform-origin: top left;
+                        transition: transform .3s ease-in-out;
+                    }
+
+                    &:hover {
+                        color: lighten($bleu, 25%);
+
+                        &:after {
+                            transform: scaleX(1);
+                        }
+                    }
+                }
+            }
+
+            @media screen and (max-width: 992px) {
+                & .navbar-nav {
+                    align-items: center !important;
+                }
+            }
+        }
+    }
+
     main {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+
         .parallax {
             height: 35vh;
             background-attachment: fixed;
@@ -23,13 +58,19 @@ $blanc: lighten(#dfe2e4, 25%);
             justify-content: center;
             align-items: center;
             border-radius: 10vh 0;
-            border: 1px solid white;
+            user-select: none;
+            transition: all .3s ease-in-out;
+            border: solid 0px $blanc;
 
             & h1,
             h2 {
                 color: $blanc;
                 font-family: 'Permanent Marker', cursive;
-                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+                text-shadow: -2px -2px 0 $noir, 2px -2px 0 $noir, -2px 2px 0 $noir, 2px 2px 0 $noir;
+
+                &.display-1 {
+                    text-decoration: underline wavy;
+                }
             }
 
             &.p0 {
@@ -37,27 +78,41 @@ $blanc: lighten(#dfe2e4, 25%);
                 border: none;
                 height: 60vh;
                 background-image: url("img/1.jpeg");
+
+                &:hover {
+                    border: solid 2rem $blanc;
+                }
             }
 
             &.p1 {
                 background-image: url("img/2.png");
+
+                &:hover {
+                    border: solid 2rem $blanc;
+                }
             }
 
             &.p2 {
                 background-image: url("img/3.png");
+
+                &:hover {
+                    border: solid 2rem darken($blanc, 10%);
+                }
             }
 
             &.p3 {
                 background-image: url("img/4.png");
+
+                &:hover {
+                    border: solid 2rem $blanc;
+                }
             }
         }
 
-        position: relative;
-        z-index: 1;
-        height: 100%;
-
         .card {
             &-title {
+                user-select: none;
+
                 h3 {
                     font-family: 'Itim', cursive;
                 }

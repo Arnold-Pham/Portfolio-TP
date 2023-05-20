@@ -6,6 +6,25 @@
   box-sizing: border-box;
   color: #181c24;
 }
+* header nav .navbar-nav a.nav-link:after {
+  border-bottom: solid 1px #4795ff;
+  content: "";
+  display: block;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease-in-out;
+}
+* header nav .navbar-nav a.nav-link:hover {
+  color: #7ab2ff;
+}
+* header nav .navbar-nav a.nav-link:hover:after {
+  transform: scaleX(1);
+}
+@media screen and (max-width: 992px) {
+  * header nav .navbar-nav {
+    align-items: center !important;
+  }
+}
 * main {
   position: relative;
   z-index: 1;
@@ -21,13 +40,22 @@
   justify-content: center;
   align-items: center;
   border-radius: 10vh 0;
-  border: 1px solid white;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: all 0.3s ease-in-out;
+  border: solid 0px white;
 }
 * main .parallax h1,
 * main .parallax h2 {
   color: white;
   font-family: "Permanent Marker", cursive;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  text-shadow: -2px -2px 0 #181c24, 2px -2px 0 #181c24, -2px 2px 0 #181c24, 2px 2px 0 #181c24;
+}
+* main .parallax h1.display-1,
+* main .parallax h2.display-1 {
+  -webkit-text-decoration: underline wavy;
+          text-decoration: underline wavy;
 }
 * main .parallax.p0 {
   border-radius: 0;
@@ -35,14 +63,31 @@
   height: 60vh;
   background-image: url("img/1.jpeg");
 }
+* main .parallax.p0:hover {
+  border: solid 2rem white;
+}
 * main .parallax.p1 {
   background-image: url("img/2.png");
+}
+* main .parallax.p1:hover {
+  border: solid 2rem white;
 }
 * main .parallax.p2 {
   background-image: url("img/3.png");
 }
+* main .parallax.p2:hover {
+  border: solid 2rem #e3e6e8;
+}
 * main .parallax.p3 {
   background-image: url("img/4.png");
+}
+* main .parallax.p3:hover {
+  border: solid 2rem white;
+}
+* main .card-title {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 * main .card-title h3 {
   font-family: "Itim", cursive;
