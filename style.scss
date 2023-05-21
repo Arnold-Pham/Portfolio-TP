@@ -125,6 +125,10 @@ $blanc: lighten(#dfe2e4, 25%);
         &-bleu {
             color: $blanc !important;
             background: $bleu !important;
+
+            &:hover {
+                background-color: darken($bleu, 10%) !important;
+            }
         }
 
         &-bleu-d {

@@ -96,6 +96,9 @@
   color: white !important;
   background: #006af9 !important;
 }
+* .btn-bleu:hover {
+  background-color: #0054c6 !important;
+}
 * .btn-bleu-d {
   color: white !important;
   background: #0049ad !important;
